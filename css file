@@ -1,0 +1,71 @@
+body {
+    background-color: #0e0e10;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(25, 25, 35, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00f7ff;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00f7ff;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: none;
+    margin-bottom: 15px;
+    background: #191927;
+    color: #f1f1f1;
+    border-radius: 8px;
+}
+
+button {
+    background: #00f7ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: #00bcd4;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#loader {
+    border: 5px solid #ccc;
+    border-top: 5px solid #00f7ff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
